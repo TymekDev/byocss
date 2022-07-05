@@ -10,9 +10,9 @@
 
 <body>
   {{- partial "header.html" . -}}
-  <div id="content">
-  {{- block "main" . }}{{- end }}
-  </div>
+  <main>
+    {{- block "main" . }}{{- end }}
+  </main>
   {{- partialCached "footer.html" . -}}
 </body>
 </html>
