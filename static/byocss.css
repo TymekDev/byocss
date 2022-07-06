@@ -40,3 +40,10 @@ nav li:first-child {
   flex-basis: 100%;
   text-align: center;
 }
+
+
+/* Footer */
+footer div {
+  display: flex;
+  justify-content: center;
+}
