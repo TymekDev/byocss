@@ -3,8 +3,11 @@
     <li>
       <a href="/"><h1>{{ site.Title }}</h1></a>
     </li>
-    <li>
-      <a href="/posts">Posts</a>
+{{ $page_url := absURL .Permalink }}
+{{ range site.Menus.main }}
+    <li{{ if eq (absURL .URL) $page_url }} class="active"{{ end }}>
+      <a href="{{ .URL }}">{{ .Name }}</a>
     </li>
+{{ end }}
   </ul>
 </nav>
