@@ -1,0 +1,15 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "byocss"
+license = "MIT"
+licenselink = "https://git.sr.ht/~tymek/byocss/tree/main/item/LICENSE"
+description = "Bring your own CSS. A theme heavily using semantic HTML. Includes enough CSS to not look awful out of the box."
+homepage = "https://git.sr.ht/~tymek/byocss"
+tags = ["simple", "semantic HTML"]
+features = ["semantic HTML"]
+min_version = "0.41.0"
+
+[author]
+  name = "Tymoteusz Makowski"
+  homepage = "https://git.sr.ht/~tymek"
