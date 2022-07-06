@@ -1,6 +1,8 @@
 <footer>
   <hr>
   <div>
-    <small>&copy; {{ now.Format "2006"}} Tymoteusz Makowski</small>
+    {{/* Precedence: copyright, params.author, title. The former two have year prepended. */}}
+    {{ $copyright := printf "%s %s" (now.Format "2006") (site.Param "author" | default site.Title) }}
+    <small>&copy; {{ site.Copyright | default $copyright }}</small>
   </div>
 </footer>
