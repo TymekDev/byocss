@@ -43,6 +43,10 @@ nav li:first-child {
   text-align: center;
 }
 
+nav .active {
+  font-weight: bold;
+}
+
 
 /* Footer */
 footer div {
