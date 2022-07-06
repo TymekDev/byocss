@@ -21,11 +21,13 @@ h3 {
 }
 
 
-/* Navbar */
-nav {
+/* Global */
+nav, main, footer {
   padding: 1rem;
 }
 
+
+/* Navbar */
 nav ul {
   display: flex;
   flex-flow: row wrap;
