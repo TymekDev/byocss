@@ -19,3 +19,24 @@ h2,
 h3 {
   margin: 0;
 }
+
+
+/* Navbar */
+nav {
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li:first-child {
+  flex-basis: 100%;
+  text-align: center;
+}
