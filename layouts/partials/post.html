@@ -5,12 +5,6 @@
     <p>{{ plainify .Summary }}</p>
     {{- end }}
     {{ partial "atomic/date.html" . }}
-    {{- if .Params.Tags }}
-    <ul>
-      {{- range .Params.Tags }}
-      <li>{{ . }}</li>
-      {{- end }}
-    </ul>
-    {{- end }}
+    {{ partial "atomic/tags.html" . }}
   </article>
 </a>
