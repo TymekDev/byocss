@@ -3,6 +3,12 @@
   <div>
     {{/* Precedence: copyright, params.author, title. The former two have &copy; and year prepended. */}}
     {{ $copyright := printf "%s %s %s" (htmlUnescape "&copy;") (now.Format "2006") (site.Param "author" | default site.Title) }}
-    <small>{{ site.Copyright | default $copyright }}</small>
+    <small>
+      {{ site.Copyright | default $copyright }}
+      &middot;
+      Powered by <a href="https://gohugo.io">Hugo</a>
+      &middot;
+      Structured by <a href="https://git.sr.ht/~tymek/byocss">byocss</a>
+    </small>
   </div>
 </footer>
