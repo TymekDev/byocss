@@ -1,0 +1,12 @@
+<h3>Posts</h3>
+{{- $pages := union .RegularPages .Sections }}
+{{- if .IsHome }}
+  {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- end }}
+<ol>
+  {{- range $pages }}
+  <li>
+    <a href="{{ .Permalink }}">{{ .Date.Format "2006-01-02" }} | {{ .Title }}</a>
+  </li>
+  {{- end }}
+</ol>

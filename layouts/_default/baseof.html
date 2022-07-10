@@ -20,6 +20,14 @@
     {{- end }}
   </main>
 
+{{- if .IsNode }}
+  <section id="posts">
+    {{- block "posts" . }}
+      {{ partial "posts.html" . }}
+    {{- end }}
+  </section>
+{{- end }}
+
   {{- partialCached "footer.html" . }}
 </body>
 
