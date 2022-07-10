@@ -4,7 +4,6 @@
     {{- if .Summary }}
     <p>{{ plainify .Summary }}</p>
     {{- end }}
-    {{ partial "atomic/date.html" . }}
-    {{ partial "atomic/tags.html" . }}
+    {{ partial "post_meta.html" . }}
   </article>
 </a>
