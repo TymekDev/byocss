@@ -4,7 +4,7 @@
 name = "byocss"
 license = "MIT"
 licenselink = "https://git.sr.ht/~tymek/byocss/tree/main/item/LICENSE"
-description = "Bring your own CSS. A theme heavily using semantic HTML. Includes enough CSS to not look awful out of the box."
+description = "byocss: bring your own CSS. A Hugo theme built with semantic HTML and no CSS."
 homepage = "https://git.sr.ht/~tymek/byocss"
 tags = ["simple", "semantic HTML"]
 features = ["semantic HTML"]
