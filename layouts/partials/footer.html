@@ -1,7 +1,7 @@
 <footer>
   <hr>
   <div>
-    {{ $copyright := printf "%s %s %s" (htmlUnescape "&copy;") (now.Format "2006") (site.Param "author" | default site.Title) }}
+    {{- $copyright := printf "%s %s %s" (htmlUnescape "&copy;") (now.Format "2006") (site.Param "author" | default site.Title) }}
     <small>
       {{ site.Copyright | default $copyright }}
       &middot;

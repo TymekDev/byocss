@@ -13,12 +13,12 @@
   {{ partial "navbar.html" . }}
 
   <main>
-    {{ block "main" . }}
-      {{ .Content }}
-    {{ end }}
+    {{- block "main" . }}
+      {{- .Content }}
+    {{- end }}
   </main>
 
-  {{ partialCached "footer.html" . }}
+  {{- partialCached "footer.html" . }}
 </body>
 
 </html>
