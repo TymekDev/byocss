@@ -4,7 +4,7 @@
     {{- if .Summary }}
     <p>{{ plainify .Summary }}</p>
     {{- end }}
-    <time datetime="{{ .Date.Format "2006-01-02 15:04:05.000-0700" }}">{{ .Date.Format "January 02, 2006" }}</time>
+    {{ partial "date.html" . }}
     {{- if .Params.Tags }}
     <ul>
       {{- range .Params.Tags }}
