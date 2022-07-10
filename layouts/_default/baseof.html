@@ -10,13 +10,13 @@
 </head>
 
 <body>
-  {{- partial "navbar.html" . -}}
+  {{ partial "navbar.html" . }}
 
   <main>
-    {{- block "main" . }}{{- end }}
+    {{ block "main" . }}{{ end }}
   </main>
 
-  {{- partialCached "footer.html" . -}}
+  {{ partialCached "footer.html" . }}
 </body>
 
 </html>
