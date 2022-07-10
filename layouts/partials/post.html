@@ -4,7 +4,7 @@
     {{- if .Summary }}
     <p>{{ plainify .Summary }}</p>
     {{- end }}
-    {{ partial "date.html" . }}
+    {{ partial "atomic/date.html" . }}
     {{- if .Params.Tags }}
     <ul>
       {{- range .Params.Tags }}
