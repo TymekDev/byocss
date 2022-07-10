@@ -1,9 +1,9 @@
 <footer>
   <hr>
   <div>
-    {{- $copyright := printf "%s %s %s" (htmlUnescape "&copy;") (now.Format "2006") (site.Param "author" | default site.Title) }}
+    {{- $copyright := printf "&copy; %s %s" (now.Format "2006") (site.Param "author" | default site.Title) }}
     <small>
-      {{ site.Copyright | default $copyright }}
+      {{ site.Copyright | default $copyright | safeHTML }}
       &middot;
       Powered by <a href="https://gohugo.io">Hugo</a>
       &middot;
