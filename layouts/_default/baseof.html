@@ -13,7 +13,9 @@
   {{ partial "navbar.html" . }}
 
   <main>
-    {{ block "main" . }}{{ end }}
+    {{ block "main" . }}
+      {{ .Content }}
+    {{ end }}
   </main>
 
   {{ partialCached "footer.html" . }}
