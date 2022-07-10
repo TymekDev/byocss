@@ -6,7 +6,15 @@
 <ol>
   {{- range $pages }}
   <li>
-    {{ partial "post.html" . }}
+    <a href="{{ .Permalink }}">
+      <article>
+        <h4>{{ .Title }}</h4>
+        {{- with .Summary }}
+        <p>{{ plainify . }}</p>
+        {{- end }}
+        {{ partial "post_meta.html" . }}
+      </article>
+    </a>
   </li>
   {{- end }}
 </ol>
