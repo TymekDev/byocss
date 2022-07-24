@@ -1,13 +1,12 @@
 ---
-title: Footer
+title: "Footer (byocss)"
 ---
 
 [byocss](https://sr.ht/~tymek/byocss) does not come with a footer included.
-If you wish to add one to your site, then you have to add `footer.html` partial to your site.
-The partial should be located at `layouts/partials/footer.html`.
+If you want to have, then you have to add `footer.html` partial to your site.
+This partial should be located at `layouts/partials/footer.html`.
+See examples below for inspiration.
 
-Since `footer.html` is a partial, it is possible to use shortcodes in the footer.
-For example, `{{ site.Title }}`, `{{ site.Copyright }}`, or `{{ now.Format "2006" }}`.
 
 ## Examples
 ```html
