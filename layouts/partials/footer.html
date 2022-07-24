@@ -1,14 +1,1 @@
-<footer>
-  <hr>
-  <div>
-    {{/* Precedence: copyright, params.author, title. The former two have &copy; and year prepended. */}}
-    {{- $copyright := printf "&copy; %s %s" (now.Format "2006") (site.Param "author" | default site.Title) }}
-    <small>
-      {{ site.Copyright | default $copyright | safeHTML }}
-      &middot;
-      Powered by <a href="https://gohugo.io">Hugo</a>
-      &middot;
-      Themed by <a href="https://git.sr.ht/~tymek/byocss">byocss</a>
-    </small>
-  </div>
-</footer>
+{{/* Placeholder partial. See: https://man.sr.ht/~tymek/byocss/footer.md */}}
