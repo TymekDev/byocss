@@ -27,7 +27,26 @@
   {{- if .IsNode }}
     <section id="posts">
       {{- block "posts" . }}
-        {{ partial "posts.html" . }}
+        <h3>Content</h3>
+        {{- $pages := union .RegularPages .Sections }}
+        {{- if .IsHome }}
+          {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+        {{- end }}
+        <ol>
+          {{- range $pages }}
+            <li>
+              <a href="{{ .Permalink }}">
+                <article>
+                  <h4>{{ .Title }}</h4>
+                  {{- with .Summary }}
+                    <p>{{ . | plainify | safeHTML }}</p>
+                  {{- end }}
+                  {{ partial "post_meta.html" . }}
+                </article>
+              </a>
+            </li>
+          {{- end }}
+        </ol>
       {{- end }}
     </section>
   {{- end }}
