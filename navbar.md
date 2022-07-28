@@ -23,7 +23,9 @@ sectionPagesMenu: "main"
 This way [Hugo](https://gohugo.io) deduces menu entries based on subdirectories of `content/`.
 For example, if you had `content/post` and `content/tools`, then the entries would include `Posts` and `Tools`.
 
-<div class="alert alert-warning">Note: Hugo does pluralize the name. Therefore, `content/post` and `content/posts` yield the same menu entry.</div>
+<div class="alert alert-warning">
+**Note:** Hugo does pluralize the name. Therefore, `content/post` and `content/posts` yield the same menu entry.
+</div>
 
 ## `menu`
 If you want more flexibility, then the navbar entries can be configured manually.
@@ -57,7 +59,7 @@ It is possible to combine the two approaches described above.
 For example, `menu` can be used to include `Home` entry in navbar populated with `sectionPagesMenu`.
 
 <div class="alert alert-warning">
-Note: when mixing the two approaches entries coming from `sectionPagesMenu` always come last.
+**Note:** when mixing the two approaches, entries coming from `sectionPagesMenu` always come last.
 Setting weight only works for manual entries.
 </div>
 
