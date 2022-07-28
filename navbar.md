@@ -7,8 +7,8 @@ There are a few different approaches on how other elements can be included in th
 Read on and pick one that suits you the best!
 
 # Configuration
-## `sectionPagesMenu`
-The easiest way is to set `sectionPagesMenu` option.
+## Using `sectionPagesMenu` Key
+The easiest way is to set `sectionPagesMenu` key.
 
 __`config.toml`__
 ```toml
@@ -27,9 +27,9 @@ For example, if you had `content/post` and `content/tools`, then the entries wou
 <strong>Note:</strong> Hugo does pluralize the name. Therefore, `content/post` and `content/posts` yield the same menu entry.
 </div>
 
-## `menu`
+## Using `menu` Key
 If you want more flexibility, then the navbar entries can be configured manually.
-To do that you need to provide a name, an URL, and optionally a weight.
+To do that you need to provide a list of items containing a name, an URL, and optionally a weight.
 
 __`config.toml`__
 ```toml
@@ -54,7 +54,7 @@ menu.main:
 Name is what is going to be displayed in the navbar, and the URL is... well, the URL.
 The weight can handle order of entries, it is 0 by default, and entries are sorted decreasingly by it.
 
-## Mixing Both Approaches
+## Combining Both Approaches
 It is possible to combine the two approaches described above.
 For example, `menu` can be used to include `Home` entry in navbar populated with `sectionPagesMenu`.
 
