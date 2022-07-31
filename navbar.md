@@ -52,11 +52,35 @@ menu.main:
 ```
 
 Name is what is going to be displayed in the navbar, and the URL is... well, the URL.
-The weight can handle order of entries, it is 0 by default, and entries are sorted decreasingly by it.
+The weight can handle order of entries, it is 0 by default, and entries are sorted in descending order.
 
 ## Combining Both Approaches
 It is possible to combine the two approaches described above.
 For example, `menu` can be used to include `Home` entry in navbar populated with `sectionPagesMenu`.
+
+__`config.toml`__
+```toml
+sectionPagesMenu = "main"
+[[menu.main]]
+name = "Home"
+url = "/"
+
+[[menu.main]]
+name = "Posts"
+url = "/posts"
+weight = 1
+```
+
+__`config.yaml`__
+```yaml
+sectionPagesMenu: "main"
+menu.main:
+  - name: "Home"
+    url: "/"
+  - name: "Posts"
+    url: "/posts"
+    weight: 1
+```
 
 <div class="alert alert-warning">
 <strong>Note:</strong> when mixing the two approaches, entries coming from <code>sectionPagesMenu</code> always come last.
