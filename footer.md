@@ -56,7 +56,7 @@ footer {
 <footer>
   <hr>
   <ul>
-    <li><a href="mailto:me@tymek.dev">Email</a></li>
+    <li><a href="mailto:tymek.makowski@gmail.com">Email</a></li>
     <li><a href="https://github.com/TymekDev">GitHub</a></li>
     <li><a href="https://linkedin.com/in/tymoteusz-makowski">LinkedIn</a></li>
     <li><a href="https://sr.ht/~tymek">SourceHut</a></li>
