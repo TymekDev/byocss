@@ -52,7 +52,8 @@ menu.main:
 ```
 
 Name is what is going to be displayed in the navbar, and the URL is... well, the URL.
-The weight can handle order of entries, it is 0 by default, and entries are sorted in descending order.
+The weight can handle order of entries, it has to be positive value.
+Entries with weight provided are sorted in descending order while entries without weight are sorted alphabetically by name.
 
 ## Combining Both Approaches
 It is possible to combine the two approaches described above.
@@ -91,4 +92,4 @@ Setting weight only works for manual entries.
 - `nav` - the navbar itself
 - `nav ul` - list with links
 - `nav li:first-child` - blog title list element
-- `.active` - currently opened page
+- `nav .active` - currently opened page
