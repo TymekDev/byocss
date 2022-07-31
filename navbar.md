@@ -63,5 +63,8 @@ For example, `menu` can be used to include `Home` entry in navbar populated with
 Setting weight only works for manual entries.
 </div>
 
-# Styling
-TODO
+# Selectors for Styling
+- `nav` - the navbar itself
+- `nav ul` - list with links
+- `nav li:first-child` - blog title list element
+- `.active` - currently opened page
