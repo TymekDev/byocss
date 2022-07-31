@@ -24,7 +24,7 @@ This way [Hugo](https://gohugo.io) deduces menu entries based on subdirectories 
 For example, if you had `content/post` and `content/tools`, then the entries would include `Posts` and `Tools`.
 
 <div class="alert alert-warning">
-<strong>Note:</strong> Hugo does pluralize the name. Therefore, `content/post` and `content/posts` yield the same menu entry.
+<strong>Note:</strong> Hugo does pluralize the name. Therefore, <code>content/post</code> and <code>content/posts</code> yield the same menu entry.
 </div>
 
 ## Using `menu` Key
@@ -59,7 +59,7 @@ It is possible to combine the two approaches described above.
 For example, `menu` can be used to include `Home` entry in navbar populated with `sectionPagesMenu`.
 
 <div class="alert alert-warning">
-<strong>Note:</strong> when mixing the two approaches, entries coming from `sectionPagesMenu` always come last.
+<strong>Note:</strong> when mixing the two approaches, entries coming from <code>sectionPagesMenu</code> always come last.
 Setting weight only works for manual entries.
 </div>
 
