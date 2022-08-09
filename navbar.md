@@ -93,4 +93,5 @@ Setting weight only works for manual entries.
 - `nav ul` - list with links
 - `nav li:first-child` - blog title list element
 - `nav a` - links in the navbar
+- `nav li:not(:first-child) a` - links in navbar excluding site title
 - `nav .active` - currently opened page
