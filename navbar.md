@@ -39,7 +39,7 @@ url = "/"
 
 [[menu.main]]
 name = "Posts"
-url = "/posts"
+url = "/posts/"
 ```
 
 __`config.yaml`__
@@ -48,12 +48,16 @@ menu.main:
   - name: "Home"
     url: "/"
   - name: "Posts"
-    url: "/posts"
+    url: "/posts/"
 ```
 
 Name is what is going to be displayed in the navbar, and the URL is... well, the URL.
 The weight can handle order of entries, it has to be positive value.
 Entries with weight provided are sorted in descending order while entries without weight are sorted alphabetically by name.
+
+<div class="alert alert-warning">
+<strong>Note:</strong> URLs should have a trailing slash. Otherwise, <code>active</code> CSS class won't be assigned.
+</div>
 
 ## Combining Both Approaches
 It is possible to combine the two approaches described above.
