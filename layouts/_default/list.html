@@ -1,6 +1,8 @@
 {{- define "header" }}
-  <a href="#posts">Skip to posts</a>
-  <h1>{{ .Title }}</h1>
-  {{ partial "post_date.html" . }}
-  {{ partial "post_tags.html" . }}
+  <header>
+    <a href="#posts">Skip to posts</a>
+    <h1>{{ .Title }}</h1>
+    {{ partial "post_date.html" . }}
+    {{ partial "post_tags.html" . }}
+  </header>
 {{- end }}
