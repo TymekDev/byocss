@@ -25,9 +25,9 @@
   {{- end }}
 
   {{- if .IsNode }}
-    <section id="posts">
-      {{- block "posts" . }}
-        <h3>Posts</h3>
+    <section id="entries">
+      {{- block "entries" . }}
+        <h3>Entries</h3>
         {{- $pages := union .RegularPages .Sections }}
         {{- if .IsHome }}
           {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
@@ -38,11 +38,11 @@
               <a href="{{ .Permalink }}">
                 <article>
                   <h4>{{ .Title }}</h4>
-                  {{ partial "post_date.html" . }}
+                  {{ partial "entry_date.html" . }}
                   {{- with .Summary }}
                     <p>{{ . | plainify | safeHTML }}</p>
                   {{- end }}
-                  {{ partial "post_tags.html" . }}
+                  {{ partial "entry_tags.html" . }}
                 </article>
               </a>
             </li>
