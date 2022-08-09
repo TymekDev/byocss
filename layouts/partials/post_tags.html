@@ -1,0 +1,7 @@
+{{- with .Params.Tags }}
+  <ul>
+    {{- range . }}
+      <li>{{ . }}</li>
+    {{- end }}
+  </ul>
+{{- end }}

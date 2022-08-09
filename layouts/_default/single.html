@@ -1,4 +1,5 @@
 {{- define "header" }}
   <h1>{{ .Title }}</h1>
-  {{ partial "post_meta.html" . }}
+  {{ partial "post_date.html" . }}
+  {{ partial "post_tags.html" . }}
 {{- end }}

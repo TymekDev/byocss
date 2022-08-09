@@ -38,10 +38,11 @@
               <a href="{{ .Permalink }}">
                 <article>
                   <h4>{{ .Title }}</h4>
+                  {{ partial "post_date.html" . }}
                   {{- with .Summary }}
                     <p>{{ . | plainify | safeHTML }}</p>
                   {{- end }}
-                  {{ partial "post_meta.html" . }}
+                  {{ partial "post_tags.html" . }}
                 </article>
               </a>
             </li>

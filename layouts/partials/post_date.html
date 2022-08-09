@@ -1,8 +1,1 @@
 <time datetime="{{ .Date.Format "2006-01-02 15:04:05.000-0700" }}">{{ .Date.Format "January 2, 2006" }}</time>
-{{- with .Params.Tags }}
-  <ul>
-    {{- range . }}
-      <li>{{ . }}</li>
-    {{- end }}
-  </ul>
-{{- end }}
