@@ -92,4 +92,5 @@ Setting weight only works for manual entries.
 - `nav` - the navbar itself
 - `nav ul` - list with links
 - `nav li:first-child` - blog title list element
+- `nav a` - links in the navbar
 - `nav .active` - currently opened page
