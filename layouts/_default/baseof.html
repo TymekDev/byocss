@@ -19,9 +19,11 @@
   {{- end }}
 
   {{- block "main" . }}
-    <main>
-      {{- .Content }}
-    </main>
+    {{- with .Content}}
+      <main>
+        {{- . }}
+      </main>
+    {{- end }}
   {{- end }}
 
   {{- if .IsNode }}
