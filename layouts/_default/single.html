@@ -1,7 +1,3 @@
-{{- define "header" }}
-  <header>
-    <h1>{{ .Title }}</h1>
-    {{ partial "entry_date.html" . }}
-    {{ partial "entry_tags.html" . }}
-  </header>
+{{/* Without this placeholder define pages are blank */}}
+{{- define "" }}
 {{- end }}

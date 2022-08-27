@@ -16,6 +16,14 @@
   {{ partial "navbar.html" . }}
 
   {{- block "header" . }}
+    <header>
+      {{- if .IsNode }}
+        <a href="#entries">Skip to entries</a>
+      {{- end }}
+      <h1>{{ .Title }}</h1>
+      {{ partial "entry_date.html" . }}
+      {{ partial "entry_tags.html" . }}
+    </header>
   {{- end }}
 
   {{- block "main" . }}
