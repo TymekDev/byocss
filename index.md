@@ -6,6 +6,17 @@ title: "byocss: bring your own CSS - a Hugo theme"
 It provides semantic HTML layout without any styling.
 If you know CSS and want to heavily customize a theme without building it from scratch, then byocss is for you.
 
+# Quickstart
+```sh
+git submodule add https://git.sr.ht/~tymek/byocss themes/byocss
+hugo server --theme byocss
+```
+
+<div class="alert alert-warning">
+<strong>Note:</strong> byocss utilizes <a href="https://sass-lang.com/">SASS</a>.
+This requires an extended installation of Hugo, please refer to <a href="https://gohugo.io/troubleshooting/faq/#i-get--this-feature-is-not-available-in-your-current-hugo-version">Hugo FAQ</a> for installation instructions.
+</div>
+
 # Customization
 First and foremost, you are going to need to style your site with CSS.
 Every page part linked in the table below has a _Selectors for Styling_ section to get you started.
