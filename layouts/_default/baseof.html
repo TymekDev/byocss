@@ -50,30 +50,30 @@
         </ol>
       </section>
     {{- else }}
-    <section id="entries">
-      {{- block "entries" . }}
-        {{- $pages := union .RegularPages .Sections }}
-        {{- if .IsHome }}
-          {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
-        {{- end }}
-        <ol>
-          {{- range $pages }}
-            <li>
-              <article>
-                <a href="{{ .Permalink }}">
-                  <h3>{{ .Title }}</h3>
-                  {{ partial "entry_date.html" . }}
-                  {{- with .Summary }}
-                    <p>{{ . | plainify | safeHTML }}</p>
-                  {{- end }}
-                </a>
-                {{ partial "entry_tags.html" . }}
-              </article>
-            </li>
+      <section id="entries">
+        {{- block "entries" . }}
+          {{- $pages := union .RegularPages .Sections }}
+          {{- if .IsHome }}
+            {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
           {{- end }}
-        </ol>
-      {{- end }}
-    </section>
+          <ol>
+            {{- range $pages }}
+              <li>
+                <article>
+                  <a href="{{ .Permalink }}">
+                    <h3>{{ .Title }}</h3>
+                    {{ partial "entry_date.html" . }}
+                    {{- with .Summary }}
+                      <p>{{ . | plainify | safeHTML }}</p>
+                    {{- end }}
+                  </a>
+                  {{ partial "entry_tags.html" . }}
+                </article>
+              </li>
+            {{- end }}
+          </ol>
+        {{- end }}
+      </section>
     {{- end }}
   {{- end }}
 
