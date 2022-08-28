@@ -22,7 +22,7 @@
       {{- end }}
       <h1>{{ .Title }}</h1>
 
-      {{- if not .IsNode }}
+      {{- if or (not .IsNode) site.Params.showListDate }}
         {{ partial "entry_date.html" . }}
       {{- end }}
       {{ partial "entry_tags.html" . }}
