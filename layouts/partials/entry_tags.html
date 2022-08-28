@@ -1,9 +1,7 @@
-{{/* FIXME: this should rely on uglyURLs option from config, but I couldn't access it. */}}
-{{- $format := cond (strings.HasSuffix .Permalink ".html") "tags/%s.html" "tags/%s/" }}
-{{- with .Params.Tags }}
+{{- with .GetTerms "tags" }}
   <ul>
     {{- range . }}
-      <li><a href="{{ printf $format . | absURL }}">{{ . }}</a></li>
+      <li><a href="{{ .Permalink }}">{{ .Name }}</a></li>
     {{- end }}
   </ul>
 {{- end }}
