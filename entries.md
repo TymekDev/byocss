@@ -12,7 +12,7 @@ Entries section can be overridden by defining `entries` block as show below.
 However, currently byocss does not support fine-tuned customization.
 Therefore, if you want to make any adjustments, then the entire section has to be redefined.
 
-[0]: https://git.sr.ht/~tymek/byocss/tree/f4ee6132f1b87420211bbea1efd5fbde1f4606e7/item/layouts/_default/baseof.html#L31-50
+[0]: https://git.sr.ht/~tymek/byocss/tree/283eb16f500c44a3cbecb4cab20381ef0adfb62f/item/layouts/_default/baseof.html#L56-77
 
 ```
 {{- define "entries" }}
