@@ -27,6 +27,7 @@ Parts don't necessarily translate to `<body>` tag children, as parts can be over
 - [Header](https://man.sr.ht/~tymek/byocss/header.md) - `"header"` block
 - [Main](https://man.sr.ht/~tymek/byocss/main.md) - `"main"` block
 - [Entries](https://man.sr.ht/~tymek/byocss/entries.md) - `"entries"` block
+- [Terms](https://man.sr.ht/~tymek/byocss/terms.md) - `"terms"` block (found only on taxonomy page, exclusive with entries)
 - [Footer](https://man.sr.ht/~tymek/byocss/footer.md) - `layouts/partials/footer.html` partial
 
 Partials are overridden by creating a respective file in your site.
@@ -35,6 +36,7 @@ Most likely the files you might want to meddle with are:
 
 - Home - `layouts/index.html`
 - Section - `layouts/_default/list.html`
+- Taxonomy - `layouts/_default/terms.html`
 - Page - `layouts/_default/single.html`
 
 ## Showcase
