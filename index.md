@@ -39,6 +39,11 @@ Most likely the files you might want to meddle with are:
 - Section - `layouts/_default/list.html`
 - Page - `layouts/_default/single.html`
 
+# Showcase
+_[Get in touch](#contact-and-contributing) to have your site listed here!_
+
+- [My personal website - tymek.dev](https://tymek.dev)
+
 # Contact and Contributing
 If you are feeling lost and need help, you see an improvement for this wiki, or you want to showcase your site, then send an email to [byocss mailing list](https://lists.sr.ht/~tymek/byocss).
 If you would like to contribute, then patches are welcome as well! New to mailing list workflow? SourceHut has [a write up for you](https://man.sr.ht/lists.sr.ht/#new-to-mailing-lists)!
