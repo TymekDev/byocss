@@ -42,10 +42,10 @@
       <section id="terms">
         <ol>
           {{- $type := .Type }}
-          {{/* FIXME: this should rely on uglyURLs option from config, but I couldn't access it. */}}
-          {{- $format := cond (strings.HasSuffix .Permalink ".html") "%s/%s.html" "%s/%s/" }}
           {{- range .Data.Terms.Alphabetical }}
-            <li><a href="{{ printf $format $type .Term | absURL }}">{{ .Term }}</a></li>
+            {{ with site.GetPage (printf "%s/%s" $type .Term) }}
+              <li><a href="{{ .Permalink }}">{{ .Name }}</a></li>
+            {{- end }}
           {{- end }}
         </ol>
       </section>
