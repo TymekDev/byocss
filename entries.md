@@ -8,9 +8,9 @@ Section page is any other page that contains subpages, i.e. a subdirectory in yo
 
 # Customization
 [By default][0], entries contain a list of posts with metadata containing post's title, date, summary, and tags.
-Entries section can be overridden by defining `entries` block as show below.
-However, currently byocss does not support fine-tuned customization.
-Therefore, if you want to make any adjustments, then the entire section has to be redefined.
+If you want to add additional information, then you can add `entry_extension.html` partial to your site.
+In other words, contents of `layouts/partial/entry_extension.html` file will be appended to every entry.
+There is also an option to override entire entries section by defining `entries` block as show below.
 
 [0]: https://git.sr.ht/~tymek/byocss/tree/283eb16f500c44a3cbecb4cab20381ef0adfb62f/item/layouts/_default/baseof.html#L56-77
 
