@@ -21,7 +21,10 @@
         <a href="#entries">Skip to entries</a>
       {{- end }}
       <h1>{{ .Title }}</h1>
-      {{ partial "entry_date.html" . }}
+
+      {{- if not .IsNode }}
+        {{ partial "entry_date.html" . }}
+      {{- end }}
       {{ partial "entry_tags.html" . }}
     </header>
   {{- end }}
