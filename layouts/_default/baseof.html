@@ -47,16 +47,16 @@
         <ol>
           {{- range $pages }}
             <li>
-              <a href="{{ .Permalink }}">
-                <article>
+              <article>
+                <a href="{{ .Permalink }}">
                   <h3>{{ .Title }}</h3>
                   {{ partial "entry_date.html" . }}
                   {{- with .Summary }}
                     <p>{{ . | plainify | safeHTML }}</p>
                   {{- end }}
-                  {{ partial "entry_tags.html" . }}
-                </article>
-              </a>
+                </a>
+                {{ partial "entry_tags.html" . }}
+              </article>
             </li>
           {{- end }}
         </ol>
