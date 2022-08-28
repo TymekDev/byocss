@@ -25,7 +25,7 @@
       {{- if or (not .IsNode) site.Params.showListDate }}
         {{ partial "entry_date.html" . }}
       {{- end }}
-      {{ partial "entry_tags.html" . }}
+      {{ partial "tags.html" . }}
     </header>
   {{- end }}
 
@@ -67,7 +67,7 @@
                       <p>{{ . | plainify | safeHTML }}</p>
                     {{- end }}
                   </a>
-                  {{ partial "entry_tags.html" . }}
+                  {{ partial "tags.html" . }}
                 </article>
               </li>
             {{- end }}
