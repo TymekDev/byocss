@@ -23,7 +23,7 @@
       <h1>{{ .Title }}</h1>
 
       {{- if or (not .IsNode) site.Params.showListDate }}
-        {{ partial "entry_date.html" . }}
+        {{ partial "date.html" . }}
       {{- end }}
       {{ partial "tags.html" . }}
     </header>
@@ -62,7 +62,7 @@
                 <article>
                   <a href="{{ .Permalink }}">
                     <h3>{{ .Title }}</h3>
-                    {{ partial "entry_date.html" . }}
+                    {{ partial "date.html" . }}
                     {{- with .Summary }}
                       <p>{{ . | plainify | safeHTML }}</p>
                     {{- end }}
