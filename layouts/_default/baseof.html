@@ -38,6 +38,18 @@
   {{- end }}
 
   {{- if .IsNode }}
+    {{- if eq .Kind "taxonomy" }}
+      <section id="terms">
+        <ol>
+          {{- $type := .Type }}
+          {{/* FIXME: this should rely on uglyURLs option from config, but I couldn't access it. */}}
+          {{- $format := cond (strings.HasSuffix .Permalink ".html") "%s/%s.html" "%s/%s/" }}
+          {{- range .Data.Terms.Alphabetical }}
+            <li><a href="{{ printf $format $type .Term | absURL }}">{{ .Term }}</a></li>
+          {{- end }}
+        </ol>
+      </section>
+    {{- else }}
     <section id="entries">
       {{- block "entries" . }}
         {{- $pages := union .RegularPages .Sections }}
@@ -62,6 +74,7 @@
         </ol>
       {{- end }}
     </section>
+    {{- end }}
   {{- end }}
 
   {{- partialCached "footer.html" . }}
