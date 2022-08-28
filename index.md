@@ -29,6 +29,7 @@ Parts don't necessarily translate to `<body>` tag children, as parts can be over
 - [Header](header.md) - `"header"` block
 - [Main](main.md) - `"main"` block
 - [Entries](entries.md) - `"entries"` block
+- [Terms](terms.md) - `"terms"` block (found only on taxonomy page, exclusive with entries)
 - [Footer](footer.md) - `layouts/partials/footer.html` partial
 
 Partials are overridden by creating a respective file in your site.
@@ -37,6 +38,7 @@ Most likely the files you might want to meddle with are:
 
 - Home - `layouts/index.html`
 - Section - `layouts/_default/list.html`
+- Taxonomy - `layouts/_default/terms.html`
 - Page - `layouts/_default/single.html`
 
 # Showcase
