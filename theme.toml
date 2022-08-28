@@ -5,11 +5,11 @@ name = "byocss"
 license = "MIT"
 licenselink = "https://git.sr.ht/~tymek/byocss/tree/main/item/LICENSE"
 description = "byocss: bring your own CSS. A Hugo theme built with semantic HTML and no CSS."
-homepage = "https://git.sr.ht/~tymek/byocss"
-tags = ["simple", "semantic HTML"]
-features = ["semantic HTML"]
-min_version = "0.41.0"
+homepage = "https://sr.ht/~tymek/byocss"
+tags = ["DIY", "simple", "minimal", "semantic HTML"]
+features = ["DIY", "semantic HTML"]
+min_version = "0.84.0"
 
 [author]
   name = "Tymoteusz Makowski"
-  homepage = "https://git.sr.ht/~tymek"
+  homepage = "https://tymek.dev"
