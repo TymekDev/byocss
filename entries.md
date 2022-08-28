@@ -16,7 +16,7 @@ Therefore, if you want to make any adjustments, then the entire section has to b
 
 ```
 {{- define "entries" }}
-    {{/* Your implementation goes here */}}
+  {{/* Your implementation goes here */}}
 {{- end }}
 ```
 
@@ -24,9 +24,9 @@ Therefore, if you want to make any adjustments, then the entire section has to b
 - `#entries` - entire `<section>` tag
 - `#entries ol` - posts list
 - `#entries ol > li` - posts list's elements (note: `#entries ol li` would also match post tags)
-- `#entries a` - post link
 - `#entries article` - post metadata
-- `#entries article h3` - post title
-- `#entries article time` - post date
-- `#entries article p` - post summary
+- `#entries article > a` - post link (note: `#entries article > a` would also match post tags links)
+- `#entries article a h3` - post title
+- `#entries article a time` - post date
+- `#entries article a p` - post summary
 - `#entries article ul` - post tags
