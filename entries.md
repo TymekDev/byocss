@@ -12,7 +12,7 @@ If you want to add additional information, then you can add `entry_extension.htm
 In other words, contents of `layouts/partial/entry_extension.html` file will be appended to every entry.
 There is also an option to override entire entries section by defining `entries` block as show below.
 
-[0]: https://git.sr.ht/~tymek/byocss/tree/283eb16f500c44a3cbecb4cab20381ef0adfb62f/item/layouts/_default/baseof.html#L56-77
+[0]: https://git.sr.ht/~tymek/byocss/tree/197ccf83270b6dfeaa83df764ff0f532c2737b16/item/layouts/_default/baseof.html#L57-79
 
 ```
 {{- define "entries" }}
