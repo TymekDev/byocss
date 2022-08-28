@@ -25,7 +25,7 @@ params:
 
 # Selectors for Styling
 - `header` - the header itself
-- `header > a` - "Skip to entries" link
+- `header > a` - "Skip to entries" link (note: `header a` would also match tag links)
 - `header h1` - post title
 - `header time` - post date
 - `header ul` - post tags

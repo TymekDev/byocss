@@ -23,9 +23,9 @@ Therefore, if you want to make any adjustments, then the entire section has to b
 # Selectors for Styling
 - `#entries` - entire `<section>` tag
 - `#entries ol` - posts list
-- `#entries ol > li` - posts list's elements (note: `#entries ol li` would also match post tags)
+- `#entries ol > li` - posts list's elements (note: `#entries ol li` would also match tag list's elements)
 - `#entries article` - post metadata
-- `#entries article > a` - post link (note: `#entries article > a` would also match post tags links)
+- `#entries article > a` - post link (note: `#entries article a` would also match tag links)
 - `#entries article a h3` - post title
 - `#entries article a time` - post date
 - `#entries article a p` - post summary
