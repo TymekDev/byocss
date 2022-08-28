@@ -44,8 +44,9 @@
           <ol>
             {{- $type := .Type }}
             {{- range .Data.Terms.Alphabetical }}
+              {{ $count := .Count }}
               {{ with site.GetPage (printf "%s/%s" $type .Term) }}
-                <li><a href="{{ .Permalink }}">{{ .Name }}</a></li>
+                <li><a href="{{ .Permalink }}">{{ .Name }}: {{ $count }}</a></li>
               {{- end }}
             {{- end }}
           </ol>
