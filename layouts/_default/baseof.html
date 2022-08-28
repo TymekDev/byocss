@@ -40,14 +40,16 @@
   {{- if .IsNode }}
     {{- if eq .Kind "taxonomy" }}
       <section id="terms">
-        <ol>
-          {{- $type := .Type }}
-          {{- range .Data.Terms.Alphabetical }}
-            {{ with site.GetPage (printf "%s/%s" $type .Term) }}
-              <li><a href="{{ .Permalink }}">{{ .Name }}</a></li>
+        {{- block "terms" . }}
+          <ol>
+            {{- $type := .Type }}
+            {{- range .Data.Terms.Alphabetical }}
+              {{ with site.GetPage (printf "%s/%s" $type .Term) }}
+                <li><a href="{{ .Permalink }}">{{ .Name }}</a></li>
+              {{- end }}
             {{- end }}
-          {{- end }}
-        </ol>
+          </ol>
+        {{- end }}
       </section>
     {{- else }}
       <section id="entries">
