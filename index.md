@@ -20,7 +20,7 @@ This requires an extended installation of Hugo, please refer to <a href="https:/
 # Customization
 First and foremost, you are going to need to style your site with CSS.
 Every page part linked in the table below has a _Selectors for Styling_ section to get you started.
-The entrypoint for stylesheets is `assets/main.scss` - this does not change if you use CSS over SCSS as the latter is superset of the former.
+The entry point for styling is `assets/main.scss` - this does not change if you use CSS over SCSS as the latter is superset of the former.
 
 Every page consists of up to five parts.
 Parts don't necessarily translate to `<body>` tag children, as parts can be overridden to your liking.

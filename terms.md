@@ -8,7 +8,7 @@ Terms are exclusive with [entries](entries.md).
 # Customization
 [By default][0], terms are a list ordered alphabetically.
 Terms section can be overridden by defining `terms` block as show below.
-However, currently byocss does not support fine-tuned customization.
+However, currently [byocss](https://sr.ht/~tymek/byocss) does not support fine-tuned customization.
 Therefore, if you want to make any adjustments, then the entire section has to be redefined.
 
 [0]: https://git.sr.ht/~tymek/byocss/tree/283eb16f500c44a3cbecb4cab20381ef0adfb62f/item/layouts/_default/baseof.html#L43-52
