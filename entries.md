@@ -2,7 +2,7 @@
 title: "Entries (byocss)"
 ---
 
-There are two page kinds where entries section is displayed: home and section.
+There are two page kinds where entries section is displayed in [byocss](https://sr.ht/~tymek/byocss): home and section.
 Home page is the landing page of your site.
 Section page is any other page that contains subpages, i.e. a subdirectory in your `content/` directory.
 

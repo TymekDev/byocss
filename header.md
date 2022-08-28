@@ -2,7 +2,7 @@
 title: Header (byocss)
 ---
 
-Header, along with main, is one of the two parts shared across all page types.
+Header, along with main, is one of the two parts shared across all page types in [byocss](https://sr.ht/~tymek/byocss).
 It is similar in form to post metadata in [entries](entries.md) with the difference that it does not contain post summary.
 Additionally, for pages containing entries, i.e. home and sections, header contains "Skip to entries" link and the date in configurable.
 
