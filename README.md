@@ -43,7 +43,10 @@ _[Get in touch](#contact-and-contributing) to have your site listed here!_
 - [My personal website - tymek.dev](https://tymek.dev)
 
 ## Contact and Contributing
-If you are feeling lost and need help, you see an improvement for this wiki, or you want to showcase your site, then send an email to [byocss mailing list](https://lists.sr.ht/~tymek/byocss).
-If you would like to contribute, then patches are welcome as well! New to mailing list workflow? SourceHut has [a write up for you](https://man.sr.ht/lists.sr.ht/#new-to-mailing-lists)!
+If you want to submit a feature request or a bug report, then do so via [SourceHut todo](https://todo.sr.ht/~tymek/byocss) or [GitHub issue](https://github.com/TymekDev/byocss/issues).
+If you would like to contribute, then [patches](https://lists.sr.ht/~tymek/byocss)\* and [pull requests](https://github.com/TymekDev/byocss/pulls) are welcome! 
+Note: it is a good practice to raise a ticket before sending a patch or pull request.
 
-Alternatively, you can open an issue or a pull request in [GitHub mirror of byocss](https://github.com/TymekDev/byocss).
+\* New to mailing list workflow? SourceHut has [a write up for you](https://man.sr.ht/lists.sr.ht/#new-to-mailing-lists)!
+
+Otherwise, if you are feeling lost and need help, you see an improvement for [byocss wiki](https://man.sr.ht/~tymek/byocss/), or you want to have your site showcased, then send an email to [byocss mailing list](https://lists.sr.ht/~tymek/byocss).
