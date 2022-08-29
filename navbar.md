@@ -3,8 +3,8 @@ title: "Navbar (byocss)"
 ---
 
 [byocss](https://sr.ht/~tymek/byocss) by default provides a navbar that contains only the site title.
-There are a few different approaches on how other elements can be included in the navbar.
-Read on and pick one that suits you the best!
+There are a few approaches on how other elements can be included in the navbar.
+Read on and pick the one that suits you the best!
 
 # Configuration
 ## Using `sectionPagesMenu` Key
@@ -52,11 +52,12 @@ menu.main:
 ```
 
 Name is what is going to be displayed in the navbar, and the URL is... well, the URL.
-The weight can handle order of entries, it has to be positive value.
-Entries with weight provided are sorted in descending order while entries without weight are sorted alphabetically by name.
+The weight can handle the order of entries, it has to be a positive value.
+Entries with weight provided are sorted in a descending order while entries without weight are sorted alphabetically by name.
 
 <div class="alert alert-warning">
-<strong>Note:</strong> URLs should have a trailing slash. Otherwise, <code>active</code> CSS class won't be assigned.
+<strong>Note:</strong> URLs should have a trailing slash or <code>.html</code> extension (depending on <a href="https://gohugo.io/content-management/urls/#ugly-urls">uglyURLs</a> config setting).
+Otherwise, <code>active</code> CSS class won't be assigned.
 </div>
 
 ## Combining Both Approaches

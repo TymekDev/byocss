@@ -3,9 +3,9 @@ title: "Footer (byocss)"
 ---
 
 [byocss](https://sr.ht/~tymek/byocss) does not come with a footer included.
-If you want to have, then you have to add `footer.html` partial to your site.
+If you want to have one, then you have to add `footer.html` partial to your site.
 This partial should be located at `layouts/partials/footer.html`.
-See examples below for inspiration.
+See examples below to get inspired.
 
 # Example 1
 
