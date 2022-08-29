@@ -18,7 +18,8 @@
   {{- block "header" . }}
     <header>
       {{- if .IsNode }}
-        <a href="#entries">Skip to entries</a>
+        {{ $name := cond (eq .Kind "taxonomy") "terms" "entries" }}
+        <a href="#{{ $name }}">Skip to {{ $name }}</a>
       {{- end }}
       <h1>{{ .Title }}</h1>
 
