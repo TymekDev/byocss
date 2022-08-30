@@ -22,8 +22,7 @@
         <a href="#{{ $name }}">Skip to {{ $name }}</a>
       {{- end }}
       <h1>{{ .Title }}</h1>
-
-      {{- if or (not .IsNode) site.Params.showListDate }}
+      {{- if or (not .IsNode) .Params.showListDate }}
         {{ partial "date.html" . }}
       {{- end }}
       {{ partial "tags.html" . }}
