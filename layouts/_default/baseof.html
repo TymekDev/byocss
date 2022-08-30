@@ -17,7 +17,7 @@
 
   {{- block "header" . }}
     <header>
-      {{- if .IsNode }}
+      {{- if and .IsNode .Params.showSkipTo }}
         {{ $name := cond (eq .Kind "taxonomy") "terms" "entries" }}
         <a href="#{{ $name }}">Skip to {{ $name }}</a>
       {{- end }}
