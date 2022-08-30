@@ -30,7 +30,7 @@ Parts don't necessarily translate to `<body>` tag children, as parts can be over
 - [Navbar](navbar.md) - `layouts/partials/navbar.html` partial
 - [Header](header.md) - `"header"` block
 - [Main](main.md) - `"main"` block
-- [Entries](entries.md) - `"entries"` block
+- [Entries](entries.md) - `"entries"` block (for home page keep in mind [mainSections](https://gohugo.io/functions/where/#mainsections) setting)
 - [Terms](terms.md) - `"terms"` block (found only on taxonomy page, mutually exclusive with entries)
 - [Footer](footer.md) - `layouts/partials/footer.html` partial
 
