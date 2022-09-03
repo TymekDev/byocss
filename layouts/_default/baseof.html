@@ -39,8 +39,8 @@
 
   {{- if .IsNode }}
     {{- if eq .Kind "taxonomy" }}
-      <section id="terms">
-        {{- block "terms" . }}
+      {{- block "terms" . }}
+        <section id="terms">
           <ol>
             {{- $type := .Type }}
             {{- range .Data.Terms.Alphabetical }}
@@ -50,11 +50,11 @@
               {{- end }}
             {{- end }}
           </ol>
-        {{- end }}
-      </section>
+        </section>
+      {{- end }}
     {{- else }}
-      <section id="entries">
-        {{- block "entries" . }}
+      {{- block "entries" . }}
+        <section id="entries">
           {{- $pages := union .RegularPages .Sections }}
           {{- if .IsHome }}
             {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
@@ -76,8 +76,8 @@
               </li>
             {{- end }}
           </ol>
-        {{- end }}
-      </section>
+        </section>
+      {{- end }}
     {{- end }}
   {{- end }}
 
