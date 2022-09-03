@@ -6,6 +6,11 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {{- with .Params.Redirect }}
+    <link rel="canonical" href="{{ . }}">
+    <meta name="robots" content="noindex">
+    <meta http-equiv="refresh" content="0; url={{ . }}">
+  {{- end }}
   {{- with (resources.Get "main.scss") }}
     {{- $style := resources.ToCSS . | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
