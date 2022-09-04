@@ -40,6 +40,7 @@ Most likely the files you might want to meddle with for block overriding are:
 - Section - `layouts/_default/list.html`
 - Taxonomy - `layouts/_default/terms.html`
 - Page - `layouts/_default/single.html`
+- 404 page - `layouts/404.html`
 
 If you would like to override a specific section, then you can read up on Hugo's [lookup order](https://gohugo.io/templates/lookup-order/).
 
