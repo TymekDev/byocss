@@ -5,8 +5,9 @@ title: "byocss: bring your own CSS - a Hugo theme"
 [byocss](https://sr.ht/~tymek/byocss) is a batteries excluded [Hugo](https://gohugo.io) theme.
 It provides semantic HTML layout without any styling (see an example at [byocss.tymek.dev](https://byocss.tymek.dev)).
 Only one CSS class and two IDs are used throughout byocss! IDs also double down as anchors for sections.
+**If you know CSS and want to heavily customize a theme without building it from scratch, then byocss is for you!**
 
-If you know CSS and want to heavily customize a theme without building it from scratch, then byocss is for you!
+_Read more on [byocss project website](https://sr.ht/~tymek/byocss) and in [byocss wiki](https://man.sr.ht/~tymek/byocss)._
 
 # Quickstart
 ```sh
