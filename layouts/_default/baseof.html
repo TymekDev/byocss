@@ -15,9 +15,9 @@
     {{- $style := resources.ToCSS . | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
   {{- end }}
-  {{ range .AlternativeOutputFormats -}}
+  {{- range .AlternativeOutputFormats }}
     <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ site.Title }}">
-  {{ end -}}
+  {{- end }}
 </head>
 
 <body>
