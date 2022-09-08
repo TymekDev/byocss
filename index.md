@@ -47,6 +47,22 @@ Most likely the files you might want to meddle with for block overriding are:
 
 If you would like to override a specific section, then you can read up on Hugo's [lookup order](https://gohugo.io/templates/lookup-order/).
 
+# Goodies
+Other than customization mentioned above byocss includes the following conveniences:
+
+## `redirect` parameter
+If you provide this one, in a post's frontmatter, then the page will include a HTTP redirect in its head to the URL provided as redirect.
+This might come in handy if you want to create a section as a list and pages as list entries.
+
+## `c` shortcode
+If you ever ran into an issue with X-axis overflow due to a long dot separated string, then this shortcode sorts this out for you.
+It replaces every dot with a dot followed by [`<wbr>` tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr).
+To make use of this shortcode simply wrap your string as shown below.
+```
+`toolkit.legacyUserProfileCustomizations.stylesheets`
+{{< c `toolkit.legacyUserProfileCustomizations.stylesheets` >}}
+```
+
 # Showcase
 _[Get in touch](#contact-and-contributing) to have your site listed here!_
 
