@@ -1,7 +1,7 @@
 <nav>
   <ul>
     <li>
-      <a href="/"><h1>{{ site.Title }}</h1></a>
+      <a href="{{ site.BaseURL }}"><h1>{{ site.Title }}</h1></a>
     </li>
     {{- $page_url := absURL .Permalink }}
     {{- range site.Menus.main }}
